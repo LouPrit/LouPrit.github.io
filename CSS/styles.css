@@ -1,0 +1,75 @@
+html, body {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header, main, aside, footer {
+    background-color: gray;
+    border-style: solid;
+    text-align: center;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 80px 1fr 60px;
+    grid-template-areas: 
+    'header header header header header header header header header header header header'
+    'leftbanner main main main main main main main main main main rightbanner'
+    'footer footer footer footer footer footer footer footer footer footer footer footer';
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 80px 1fr 60px;
+        grid-template-areas: 
+        'header header header header'
+        'main main main main'
+        'footer footer footer footer';
+    }
+    .leftbanner {
+        display: none !important;
+    }
+    
+    .rightbanner {
+        display: none !important;
+    }
+}
+
+header {
+    grid-area: header;
+}
+
+.leftbanner {
+    grid-area: leftbanner;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightbanner {
+    grid-area: rightbanner;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    grid-area: footer;
+}
