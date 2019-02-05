@@ -18,11 +18,53 @@ header, main, aside, footer {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 80px 1fr 60px;
-    grid-template-areas: 
-    'header header header header header header header header header header header header'
-    'leftbanner main main main main main main main main main main rightbanner'
-    'footer footer footer footer footer footer footer footer footer footer footer footer';
+    gap: 0.625rem;
 }
+
+header {
+    grid-area: 1 / 1 / 1 / span 12;
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul {
+    width: 35vw;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+.leftbanner {
+    grid-area: 2 / 1 / 3 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightbanner {
+    grid-area: 2 / 12 / 3 / 13;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    grid-area: 2 / 2 / 3 / span 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    grid-area: 3 / 1 / 4 / span 12;
+}
+
+
 
 @media only screen and (max-width: 600px) {
     .container {
@@ -30,11 +72,7 @@ header, main, aside, footer {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 80px 1fr 60px;
-        grid-template-areas: 
-        'header header header header'
-        'main main main main'
-        'footer footer footer footer';
+        grid-template-rows: auto 1fr 60px;
     }
     .leftbanner {
         display: none !important;
@@ -43,33 +81,22 @@ header, main, aside, footer {
     .rightbanner {
         display: none !important;
     }
-}
 
-header {
-    grid-area: header;
-}
+    header {
+        grid-area: 1 / 1 / 1 / span 4;
+        flex-direction: column;
+        align-items: center;
+    }
 
-.leftbanner {
-    grid-area: leftbanner;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    header ul {
+        flex-direction: column;
+    }
 
-.rightbanner {
-    grid-area: rightbanner;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-main {
-    grid-area: main;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-footer {
-    grid-area: footer;
+    main {
+        grid-area: 2 / 1 / 3 / span 4;
+    }
+    
+    footer {
+        grid-area: 3 / 1 / 4 / span 4;
+    }
 }
