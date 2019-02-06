@@ -1,15 +1,11 @@
 html, body {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
-
-/* body {
-    overflow-x: hidden;
-} */
 
 header, main, aside, footer {
     background-color: gray;
@@ -162,7 +158,7 @@ main {
 .iframe-container {
     height: 320px;
     max-width: 520px;
-    margin: auto;
+    margin: 4rem auto 4rem auto;
 }
 
 iframe {
@@ -241,7 +237,7 @@ MEDIA QUERY FOR MOBILE PHONES
     }
 
     .iframe-container {
-        margin: 1.5rem;
+        margin: 4rem 0.8rem 4rem 0.8rem;
     }
     
     footer {
