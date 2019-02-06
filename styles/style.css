@@ -21,6 +21,7 @@ header, main, aside, footer {
     gap: 0.625rem;
 }
 
+
 /*  
 START OF HEADER
 */
@@ -28,7 +29,8 @@ header {
     grid-area: 1 / 1 / 1 / span 12;
     display: flex;
     position: fixed;
-    width: 100vw;
+    right: 0px;
+    left: 0px;
     justify-content: space-between;
     align-items: center;
     padding: 0.4rem;
@@ -86,6 +88,10 @@ main {
     text-align: center;
 }
 
+.formdiv {
+    margin-bottom: 4rem;
+}
+
 .formdiv form {
     display: flex;
     flex-direction: column;
@@ -93,6 +99,7 @@ main {
 }
 
 .formdiv h2 {
+    font-size: 2rem;
     margin-top: 0;
     margin-bottom: 0.5rem;
 }
@@ -113,8 +120,54 @@ main {
 }
 
 .formdiv form button:hover {
+    cursor: pointer;
     background-color: #e5af0b;
 }
+
+.featurediv {
+    display: grid;
+    grid-template-columns: 2.5fr 7fr;
+    grid-template-rows: repeat (3 1fr);
+    align-items: center;
+    grid-row-gap: 2.5rem;
+}
+
+.featurediv h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.featurediv p {
+    margin: 0;
+    padding: 0;
+}
+
+.featureleft1, .featureleft2, .featureleft3 {
+    text-align: end;
+}
+
+.featureright1, .featureright2, .featureright3 {
+    text-align: start;
+    padding-left: 5rem;
+}
+
+.fa-arrow-alt-circle-right {
+    font-size: 3rem;
+    color: orange;
+}
+
+
+.iframe-container {
+    border-style: solid;
+    margin-top: 4rem;
+  }
+  
+  .iframe-container iframe {
+    max-width: 620px;
+     width: 100%;
+  }
+
 
 /*  
 START OF FOOTER
@@ -147,14 +200,13 @@ MEDIA QUERY FOR MOBILE PHONES
     header {
         grid-area: 1 / 1 / 1 / span 4;
         flex-direction: column;
-        align-items: center;
     }
 
     header ul {
         flex-direction: column;
-        align-items: center;
         margin-top: 0.33rem;
         margin-bottom: 0;
+        align-items: center;
     }
 
     header img {
@@ -162,11 +214,28 @@ MEDIA QUERY FOR MOBILE PHONES
     }
 
     .headerspace {
-        height: 7.8rem;
+        height: 7.5rem;
     }
 
     main {
         grid-area: 2 / 1 / 3 / span 4;
+    }
+
+    .featurediv {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat (3 1fr);
+        align-items: center;
+        grid-row-gap: 2.5rem;
+        margin: 0.75rem;
+    }
+
+    .featureleft1, .featureleft2, .featureleft3 {
+        display: none !important;
+    }
+
+    .featureright1, .featureright2, .featureright3 {
+        padding: 0;
     }
     
     footer {
