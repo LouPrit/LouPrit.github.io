@@ -7,10 +7,6 @@ html, body {
     font-family: sans-serif;
 }
 
-body {
-    overflow-x: hidden;
-}
-
 header, main, aside, footer {
     background-color: gray;
     border-style: solid;
@@ -160,18 +156,6 @@ main {
     font-size: 3rem;
     color: orange;
 }
-
-
-.iframe-container {
-    border-style: solid;
-    margin-top: 4rem;
-  }
-  
-  .iframe-container iframe {
-    max-width: 620px;
-     width: 100%;
-  }
-
 
 /*  
 START OF FOOTER
