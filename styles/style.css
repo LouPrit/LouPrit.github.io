@@ -7,9 +7,9 @@ html, body {
     font-family: sans-serif;
 }
 
-/* body {
+body {
     overflow-x: hidden;
-} */
+}
 
 header, main, aside, footer {
     background-color: gray;
@@ -238,6 +238,10 @@ MEDIA QUERY FOR MOBILE PHONES
 
     .featureright1, .featureright2, .featureright3 {
         padding: 0;
+    }
+
+    .iframe-container {
+        margin: 1.3rem;
     }
     
     footer {
