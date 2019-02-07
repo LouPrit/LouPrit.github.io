@@ -1,2 +1,3 @@
 # LouPrit.github.io
-#Repo of my projects from FreeCodeCamp
+#Responsive product page using HTML and CSS.
+Made for freecodecamp.org responsive web design certification.
