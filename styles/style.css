@@ -195,6 +195,7 @@ MEDIA QUERY FOR MOBILE PHONES
         flex-direction: column;
         margin-top: 0.33rem;
         margin-bottom: 0;
+        padding: 0;
         align-items: center;
     }
 
