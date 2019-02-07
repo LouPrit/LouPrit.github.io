@@ -7,10 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Product Page</title>
     <link rel="stylesheet" href="styles\style.css">
-    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ'
-        crossorigin='anonymous'>
-        <link rel="shortcut icon"
- href="https://img.icons8.com/color/48/000000/google-logo.png">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
+        integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/google-logo.png">
 </head>
 
 <body>
@@ -22,21 +21,21 @@
                 <ul>
                     <li><a class="nav-link" href="#features">Features</a></li>
                     <li><a class="nav-link" href="#video">How It Works</a></li>
-                    <li><a class="nav-link" href="#purch">Purchase</a></li>
+                    <li><a class="nav-link" href="#purchases">Purchase</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
             <div class="formdiv">
-                <form action="https://www.freecodecamp.com/email-submit">
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
                     <h2>Handcrafted, Home-made masterpieces</h2>
-                    <input type="email" name="email" placeholder="Enter your email address" required>
-                    <button type="submit">Get Started</button>
+                    <input id="email" type="email" name="email" placeholder="Enter your email address" required>
+                    <input type="submit" id="submit" value="Get Started">
                 </form>
             </div>
 
-            <div class="featurediv">
+            <div class="featurediv" id="features">
                 <div class="featureleft1">
                     <i class='far fa-arrow-alt-circle-right'></i>
                 </div>
@@ -46,7 +45,7 @@
                         ipsam?</p>
                 </div>
                 <div class="featureleft2">
-                    <i class='far fa-arrow-alt-circle-right'></i>
+                    <i class='fas fa-anchor'></i>
                 </div>
                 <div class="featureright2">
                     <h3>Lorem Ipsum</h3>
@@ -54,7 +53,7 @@
                         ipsam?</p>
                 </div>
                 <div class="featureleft3">
-                    <i class='far fa-arrow-alt-circle-right'></i>
+                    <i class="fas fa-apple-alt"></i>
                 </div>
                 <div class="featureright3">
                     <h3>Lorem Ipsum</h3>
@@ -63,20 +62,41 @@
                 </div>
             </div>
             <div class="iframe-container">
-                <iframe src="https://www.youtube.com/embed/2QB3rvtN7Sc" allowfullscreen></iframe>
+                <iframe id="video" src="https://www.youtube.com/embed/2QB3rvtN7Sc" allowfullscreen></iframe>
+            </div>
+
+            <div id="purchases" class="buygrid">
+                <div class="buylow">
+                    <h4 class="buytitle"> Lorem Ipsum</h4>
+                    <p class="cost">£400</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                    <input type="button" value="Purchase"></input>
+                </div>
+                <div class="buymed">
+                    <h4 class="buytitle"> Lorem Ipsum</h4>
+                    <p class="cost">£600</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                    <input type="button" value="Purchase"></input>
+                </div>
+                <div class="buyhigh">
+                    <h4 class="buytitle"> Lorem Ipsum</h4>
+                    <p class="cost">£800</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                    <input type="button" value="Purchase"></input>
+                </div>
             </div>
         </main>
 
         <aside class="leftbanner">
-            <h1>left side</h1>
         </aside>
 
         <aside class="rightbanner">
-            <h1>right side</h1>
         </aside>
 
         <footer>
-            <h1>footer</h1>
         </footer>
     </div>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
